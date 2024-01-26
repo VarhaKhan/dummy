@@ -4,7 +4,8 @@ node{
     {
         git credentialsId: '4cc785e9-441d-4818-a248-2bfb2148004d', url: 'https://github.com/VardhanNS/phpmysql-app.git'
     }
-    
+
+    /*
     stage('Run Docker Compose File')
     {
         sh 'docker-compose build'
@@ -18,4 +19,5 @@ node{
         }
         sh 'docker push vardhanns/phpmysql_app'
     }
+    */
 }
