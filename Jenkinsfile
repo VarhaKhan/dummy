@@ -5,12 +5,12 @@ node{
         git url: 'https://github.com/VarhaKhan/dummy.git'
     }
 
-    /*
     stage('Run Docker Compose File')
     {
         sh 'docker-compose build'
         sh 'docker-compose up -d'
     }
+    /*
     stage('PUSH image to Docker Hub')
     {
         withCredentials([string(credentialsId: 'DockerHubPassword', variable: 'DHPWD')]) 
