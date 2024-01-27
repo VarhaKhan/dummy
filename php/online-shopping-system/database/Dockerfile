@@ -10,3 +10,9 @@ ENV MYSQL_DATABASE=database
 ENV MYSQL_USER=edureka
 ENV MYSQL_PASSWORD=admin
 
+# Set the default authentication plugin to 'mysql_native_password'
+RUN { \
+    echo '[mysqld]'; \
+    echo 'default_authentication_plugin=mysql_native_password'; \
+} > /etc/mysql/conf.d/mysql.cnf
+
